@@ -1,0 +1,130 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ff4e88,#ff8fab);
+  font-family:Arial, Helvetica, sans-serif;
+  overflow:hidden;
+}
+
+.container{
+  width:90%;
+  max-width:700px;
+  background:white;
+  padding:40px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+  animation:aparecer 1.5s ease;
+}
+
+.topo{
+  color:#ff0055;
+  margin-bottom:20px;
+  letter-spacing:3px;
+}
+
+.titulo{
+  font-size:50px;
+  margin-bottom:20px;
+  color:#ff0055;
+}
+
+.texto{
+  font-size:20px;
+  line-height:1.8;
+  color:#444;
+  margin-bottom:30px;
+}
+
+button{
+  padding:15px 35px;
+  border:none;
+  border-radius:50px;
+  background:#ff0055;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+  .foto {
+    width:220px ;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);  
+  }
+
+button:hover{
+  transform:scale(1.1);
+  background:#ff2b6f;
+}
+
+#surpresa{
+  margin-top:30px;
+}
+
+.escondido{
+  display:none;
+}
+
+@keyframes aparecer{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* corações */
+
+.coracao{
+  position:fixed;
+  color:red;
+  font-size:25px;
+  animation:subir 4s linear forwards;
+}
+
+@keyframes subir{
+  0%{
+    transform:translateY(0);
+    opacity:1;
+  }
+
+  100%{
+    transform:translateY(-100vh);
+    opacity:0;
+  }
+}
+.coracao-nome{
+  display:inline-block;
+  animation:pulsar 1s infinite;
+}
+
+@keyframes pulsar{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.4);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
