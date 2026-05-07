@@ -11,7 +11,7 @@ body{
   align-items:center;
   background:linear-gradient(135deg,#ff4e88,#ff8fab);
   font-family:Arial, Helvetica, sans-serif;
-  overflow:hidden;
+  overflow-x:hidden;
 }
 
 .container{
