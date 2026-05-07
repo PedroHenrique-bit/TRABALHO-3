@@ -8,10 +8,12 @@ body{
   height:100vh;
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-items:flex-start;
   background:linear-gradient(135deg,#ff4e88,#ff8fab);
   font-family:Arial, Helvetica, sans-serif;
   overflow-x:hidden;
+  padding-top:40px;
+  padding-bottom:40px;
 }
 
 .container{
